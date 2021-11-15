@@ -1,0 +1,35 @@
+.grid {
+  display: grid;
+  grid-template-areas:
+    "head head head"
+    "nav main aside"
+    "foot foot foot";
+  height: 100vh;
+  grid-gap: 10px;
+  grid-template-columns: 150px 5fr 100px;
+  grid-template-rows: 100px 5fr 70px;
+}
+.grid > * {
+  padding: 30px;
+  background: #fddb00;
+}
+
+header {
+  grid-area: head;
+}
+
+nav {
+  grid-area: nav;
+}
+
+main {
+  grid-area: main;
+}
+
+aside {
+  grid-area: aside;
+}
+
+footer {
+  grid-area: foot;
+}
